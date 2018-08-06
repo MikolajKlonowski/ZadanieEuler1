@@ -10,7 +10,13 @@ public class WyszukiwanieLiczb {
     public static void main(String[] args) {
         WyszukiwanieLiczb wyszukiwanieLiczb = new WyszukiwanieLiczb();
         List<Integer> a = wyszukiwanieLiczb.wyszukaneWielokrotnosciLiczby3i5(1000);
-        System.out.println(a.toString());
+//        System.out.println(a.toString());
+        int suma=0;
+        for (Integer liczby : a) {
+            suma+=liczby;
+
+        }
+        System.out.println(suma);
     }
 
 

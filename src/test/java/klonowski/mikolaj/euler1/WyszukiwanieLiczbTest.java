@@ -7,7 +7,6 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.assertj.core.internal.bytebuddy.matcher.ElementMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class WyszukiwanieLiczbTest {
@@ -16,12 +15,12 @@ public class WyszukiwanieLiczbTest {
         //given
         WyszukiwanieLiczb wyszukiwanieLiczb = new WyszukiwanieLiczb();
         int a = 10;
-        ArrayList<Integer> b = new ArrayList<Integer>();
+        ArrayList<Integer> b = new ArrayList<>();
         b.add(3);
         b.add(5);
         b.add(6);
         b.add(9);
-        List<Integer> liczby = new ArrayList<>();
+        List<Integer> liczby;
         //when
         liczby = wyszukiwanieLiczb.wyszukaneWielokrotnosciLiczby3i5(a);
         //then
@@ -33,7 +32,7 @@ public class WyszukiwanieLiczbTest {
         //given
         WyszukiwanieLiczb wyszukiwanieLiczb = new WyszukiwanieLiczb();
         int a = 10;
-        List<Integer> result = new ArrayList<Integer>();
+        List<Integer> result;
          result= wyszukiwanieLiczb.wyszukaneWielokrotnosciLiczby3i5(a);
          int suma = 0 ;
         for (Integer in : result) {
